@@ -27,8 +27,13 @@ const AddPost = () => {
 
   return (
     <form onSubmit={handleSubmit} className="containAddPost">
-      <input type="text" placeholder="Titre..." name="title" />
-      <textarea name="desc" autoFocus={true} placeholder="Description..." />
+      <input type="text" placeholder="Titre..." name="title" required />
+      <textarea
+        name="desc"
+        autoFocus={true}
+        placeholder="Description..."
+        required
+      />
       <select
         name="color"
         style={{ backgroundColor: color, fontSize: "large" }}
